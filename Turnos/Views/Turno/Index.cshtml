@@ -1,0 +1,30 @@
+﻿@model Turno
+
+@{
+    ViewBag.Title = "Asignacion de Turnos";
+
+}
+
+<div>
+    <p>
+        <a class="btn btn-info" asp-action="AsignarTurno">Asignar Turno</a>
+
+    </p>
+</div>
+
+<div class="row">
+    <div class=" col s6">
+        <label asp-for="IdMedico">Médico</label>
+        <select asp-for="IdMedico" asp-items="ViewBag.idMedico"> </select>
+    </div>
+    <div class=" col s6">
+        <label asp-for="IdPaciente">Paciente</label>
+        <select asp-for="IdPaciente" asp-items="ViewBag.idPaciente"> </select>
+    </div>
+</div>
+
+
+
+<br>
+<br />
+<br />
